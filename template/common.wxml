@@ -1,0 +1,14 @@
+<!-- 加载中模板 
+  isHiddenLoading:boolen 是否显示
+  loadingText：string  文言展示
+-->
+<template name="loadding">
+  <view class="loadding" hidden="{{isHiddenLoading}}">{{loadingText}}</view>
+</template>
+<!-- 无数据 
+  isShowNoData :boolen 是否显示
+  noDataText：string  文言展示
+-->
+<template name="noData">
+  <view class="no-data"  wx:if="{{isShowNoData}}">{{noDataText}}</view>
+</template>

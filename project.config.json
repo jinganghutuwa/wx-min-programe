@@ -1,0 +1,120 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.0",
+	"appid": "wx759aa95ca3bb1bbf",
+	"projectname": "WxDemo",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": -1,
+					"name": "登录页",
+					"pathName": "pages/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "qiang页面",
+					"pathName": "pages/service/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "pages/service/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "支付结果页",
+					"pathName": "pages/service/result",
+					"query": "orderId= SXGHXCHDHI525464",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单列表",
+					"pathName": "pages/order/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "网点列表",
+					"pathName": "pages/point/point",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心页",
+					"pathName": "pages/personal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "选择城市",
+					"pathName": "pages/point/city",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "门店列表list",
+					"pathName": "pages/point/list",
+					"query": "cityname=贵阳市",
+					"scene": null
+				}
+			]
+		}
+	}
+}

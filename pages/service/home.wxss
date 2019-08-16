@@ -1,0 +1,35 @@
+/* pages/service/home.wxss */
+.qiang-banner{
+  width: 100%;
+}
+.qiang-remain-num{
+  width: 100%;
+  height: 98rpx;
+  background-color: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+.qiang-remain-num-tip{
+  color: #C7C7C7;
+  font-size: 20rpx;
+}
+.qing-rule{
+  background-color: #fff;
+  padding: 36rpx 30rpx;
+  margin-bottom: 156rpx;
+}
+.qiang-rule-title{
+  width: 162rpx;
+  height: 28rpx;
+  margin-bottom: 20rpx;
+}
+.qiang-rule-item{
+  line-height: 36rpx;
+  margin-bottom: 20rpx;
+  word-break: break-all;
+}
+.qiang-rule-sysm{
+  width: 86%;
+  height: 139rpx;
+  margin: 0 7%;
+}

@@ -1,0 +1,17 @@
+<!--pages/personal.wxml-->
+<view class="personal-info">
+  <image class="personal" src="../images/personal.png"></image>
+  <view class="personal-content">
+    <view>欢迎您！</view>
+    <view>{{userTel}}</view>
+  </view>
+</view>
+<view class="flex-btwn-aic person-contact">
+  <view class="flex-aic">
+    <image src="../images/icon_contact.png"></image>咨询服务
+  </view>
+  <view data-tel="4008881768" bindtap="toTel">4008881768</view>
+</view>
+
+<view class="submit-btn" bindtap="loginOut">退出登录</view>
+<toast id='toast'></toast>

@@ -1,0 +1,19 @@
+<!--pages/login.wxml-->
+<view class="login-title">
+  请输入登录信息
+</view>
+<view class="flex-btwn-aic login-item">
+  <view class="login-item-title">身份证号</view>
+  <input bindinput="getCardId" class="login-item-input" type="idcard" placeholder="请输入您的身份证号"></input>
+</view>
+<view class="flex-btwn-aic login-item">
+  <view class="login-item-title">手机号</view>
+  <input bindinput="getTel" class="login-item-input" type="number" placeholder="请输入您的手机号"></input>
+</view>
+<view class="flex-btwn-aic login-item">
+  <view class="login-item-title">验证码</view>
+  <input bindinput="getDCodeInput" class="login-item-input-code" type="number" placeholder="请输入验证码"></input>
+  <view class="login-item-code" bindtap="getDCode">{{getCodeText}}</view>
+</view>
+<view class="submit-btn" bindtap="submitLogin">登 录</view>
+<toast id='toast'></toast>

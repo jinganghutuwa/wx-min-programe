@@ -1,0 +1,27 @@
+<!--pages/service/pay.wxml-->
+<view class="flex-btwn-aic pay-header">
+  <text>普通洗车（全车型）</text>
+  <text class="color-red">购买数量X1</text>
+</view>
+
+<view class="pay-info">
+  <view class="pay-info-tit">支付金额</view>
+  <view class="pay-info-price">
+    <text>￥</text>9.00</view>
+  <view class="pay-info-oldPrice">￥35.0</view>
+  <view class="pay-info-tip">支付时选择中原银行信用卡才能享受优惠~</view>
+</view>
+
+<view class="pay-style">
+  <view class="pay-info-tit">支付方式</view>
+  <view class="flex-btwn-aic pay-style-item">
+    <view class="flex-aic">
+      <image src="../../images/icon_wx.png"></image>
+      <view class="pay-style-name">微信支付</view>
+    </view>
+    <image src="../../images/icon_checked.png"></image>
+  </view>
+</view>
+<view class="pay-tips">抢购成功后请尽快到盛大网点使用，有效期30天，预期失效</view>
+
+<view class="footer-btn">立即支付</view>

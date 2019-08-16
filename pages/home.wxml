@@ -1,0 +1,26 @@
+<view class="index-banner-info">
+  <image class="index-banner" mode="widthFix" src="../images/index_banner.png"></image>
+  <image class="index-personal" bindtap="toPersonal" src="../images/index_personal.png"></image>
+</view>
+<view class="index-remain-num">总剩余名额：
+  <text wx:for="{{remainNum}}" wx:for-index="idx" wx:key="idx">{{item}}</text>
+</view>
+<view class="index-info">
+  <view class="flex-btwn-aic index-tip-info" bindtap="toQiang">
+    <view>
+      <view class="index-tip-title">我要洗车</view>
+      <view class="index-tip-tips">尊享6元洗车服务</view>
+    </view>
+    <image mode="aspectFit" src="../images/index_tip.png"></image>
+  </view>
+  <view class="flex-btwn-aic index-btn-list">
+    <view class="index-btn-item"  bindtap="toPoint">
+      <image src="../images/index_point.png"></image>
+    </view>
+    <view class="index-btn-item" bindtap="toOrder">
+      <image src="../images/index_order.png"></image>
+    </view>
+  </view>
+</view>
+<view class="index-footer">如需帮助，请拨打24小时客服专线4008881768</view>
+<toast id='toast'></toast>

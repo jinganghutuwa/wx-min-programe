@@ -1,0 +1,19 @@
+<!--pages/service/home.wxml-->
+<image class="qiang-banner" src="../../images/qiang_banner.png"></image>
+<view class="flex-btwn-aic qiang-remain-num">
+  <view>
+    洗车（普通全车型）
+    <text class="qiang-remain-num-tip">剩余优惠次数：1次</text>
+  </view>
+  <view class="color-red">￥6.0/张</view>
+</view>
+<view class="qing-rule">
+  <image class="qiang-rule-title" src="../../images/qiang_gmxz.png"></image>
+  <view class="qiang-rule-item">1、本次活动限获得“6元洗车”权益资格的中原银行ETC信用卡持卡人参与。中原银行ETC信用卡持卡人可通过中原银行信用卡微信公众号-ETC小秘书-6元洗车-微信支付渠道支付6元购买“6元洗车”权益一次。</view>
+  <view class="qiang-rule-item">2、中原银行ETC信用卡客户购买的“6元洗车”权益（电子洗车券）自购买之日起30天有效期限内使用。本次活动优惠不与商户店内其他优惠、促销、赠券同时享受；</view>
+  <image class="qiang-rule-title" src="../../images/qiang_sylc.png"></image>
+  <image class="qiang-rule-sysm" src="../../images/qiang_sysm.png"></image>
+
+</view>
+<view class="footer-btn" bindtap="toPay">立即购买</view>
+

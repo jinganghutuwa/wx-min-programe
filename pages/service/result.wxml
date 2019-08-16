@@ -1,0 +1,23 @@
+<!--pages/service/result.wxml-->
+<view class="result">
+  <view class="result-info">
+    <view class="result-title">恭喜您获得洗车券</view>
+    <canvas class="result-qrcode" canvas-id="myQrcode"></canvas>
+    <view class="order-info">
+      <view class="flex-btwn-aic order-info-item">
+        <text class="color-999">订单串码</text>
+        <text>{{orderInfo.orderId}}</text>
+      </view>
+      <view class="flex-btwn-aic order-info-item">
+        <text class="color-999">有效期至</text>
+        <text>{{orderInfo.endTime}}</text>
+      </view>
+    </view>
+    <view class="result-btn">
+      <view class="result-bg-btn" bindtap="toCity">查看服务网点</view>
+      <view class="result-border-btn" bindtap="toIndex">返回首页</view>
+    </view>
+  </view>
+  <image class="resukt-tip-img" src="../../images/qiang_sysm.png"></image>
+</view>
+<toast id='toast'></toast>

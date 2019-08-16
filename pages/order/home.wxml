@@ -1,0 +1,112 @@
+<!--pages/order/home.wxml-->
+<import src="../../template/common.wxml"/>
+<view class="flex-btwn-aic order-classify">
+  <view wx:for="{{orderTypeList}}" wx:key="index" class="order-classify-item {{item.oType == orderType ? 'active' : ''}}" data-oType="{{item.oType}}" bindtap="changeType">{{item.oName}}</view>
+</view>
+<view class="order-list">
+  <block wx:if="{{!isShowNoData}}">
+    <view wx:for="{{orderList}}" class="order-item {{item.status == 8 ? 'used':'' }}"  wx:key="index">
+      <view class="order-item-title">普通洗车（全车型）</view>
+      <view class="order-item-back" hidden="{{item.status != 1}}" bindtap="rebackMoney">退款</view>
+      <image class="order-item-img" src="../../images/icon_ygq.png" hidden="{{item.status != 8}}"></image>
+      <view class="flex-btwn-aic order-item-info">
+        <text>下单时间：</text>
+        <text>{{item.createTime}} </text>
+      </view>
+      
+      <view class="flex-btwn-aic order-item-info" wx:if="{{item.status == 5}}">
+        <text>消费时间：</text>
+        <text>{{item.useTime}} </text>
+      </view>
+      <view class="flex-btwn-aic order-item-info" wx:else>
+        <text>有效期至：</text>
+        <text>{{item.endTime}} </text>
+      </view>
+      <view class="flex-btwn-aic order-item-info">
+        <text>电子消费码：</text>
+        <text>{{item.orderId}} </text>
+      </view>
+      <view class="flex-ntwn-aic order-item-btn">
+        <text class="order-btn-item" hidden="{{item.status != 1}}" bindtap="toCity">查看网点</text>
+        <text class="order-btn-item {{item.status != 1?'used':''}}" data-matrixContent="{{item.matrixContent}}" bindtap="openQrCode" style="width:{{item.status != 1?'100%':'50%'}}">订单二维码</text>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <template is="noData" data="{{isShowNoData,noDataText:'暂无订单'}}"/>
+  </block>
+
+  <!-- <view class="order-item">
+    <view class="order-item-title">洗车券</view>
+    <view class="order-item-back">退款</view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>下单时间：</text>
+      <text>2019-07-01 </text>
+    </view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>有效期至：</text>
+      <text>2019-07-01 </text>
+    </view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>电子消费码：</text>
+      <text>100GFTJ00 </text>
+    </view>
+    <view class="flex-ntwn-aic order-item-btn">
+      <text class="order-btn-item">查看网点</text>
+      <text class="order-btn-item" bindtap="openQrCode">订单二维码</text>
+    </view>
+  </view> -->
+  <!-- <view class="order-item used">
+    <image class="order-item-img" src="../../images/icon_ygq.png"></image>
+    <view class="order-item-title">洗车券</view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>下单时间：</text>
+      <text>2019-07-01 </text>
+    </view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>有效期至：</text>
+      <text>2019-07-01 </text>
+    </view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>电子消费码：</text>
+      <text>100GFTJ00 </text>
+    </view>
+    <view class="flex-ntwn-aic order-item-btn">
+      <text class="order-btn-item" wx:if="{{false}}">查看网点</text>
+      <text class="order-btn-item used" style="width:100%">订单二维码</text>
+    </view>
+  </view> -->
+  <!-- <view class="order-item">
+    <image class="order-item-img" src="../../images/icon_ygq.png"></image>
+    <view class="order-item-title">洗车券</view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>下单时间：</text>
+      <text>2019-07-01 </text>
+    </view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>有效期至：</text>
+      <text>2019-07-01 </text>
+    </view>
+    <view class="flex-btwn-aic order-item-info">
+      <text>电子消费码：</text>
+      <text>100GFTJ00 </text>
+    </view>
+    <view class="flex-ntwn-aic order-item-btn">
+      <text class="order-btn-item" wx:if="{{false}}">查看网点</text>
+      <text class="order-btn-item used" style="width:100%">订单二维码</text>
+    </view>
+  </view> -->
+</view>
+
+<!-- <view animation="{{animationData}}" style="background:red,height:100rpx,width:100rpx"></view> -->
+<view class="flex-jcc-aic mask" hidden="{{isHiddenQrCode}}" bindtap="closeQrCode">
+  <view class="mask-content" catchtap="cancelBubble">
+    <image catchtap="closeQrCode" class="mask-close-img" src="../../images/btn_close.png"></image>
+    <canvas class="result-qrcode" canvas-id="myQrcode"></canvas>
+    <!-- <view class="order-matrix">电子消费码：100GFTJ00</view> -->
+    <view class="mask-content-tip">*请向商家出示此电子消费码或二维码享受服务 </view>
+    <view catchtap="closeQrCode" class="order-close-btn">关闭</view>
+  </view>
+</view>
+
+<toast id='toast'></toast>

@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/home",
+    "pages/login",
+    "pages/personal",
+    "pages/order/home",
+    "pages/service/home",
+    "pages/service/pay",
+    "pages/service/result",
+    "pages/point/city",
+    "pages/point/list",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "中原银行洗车服务",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "networkTimeout":{
+    "request":10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

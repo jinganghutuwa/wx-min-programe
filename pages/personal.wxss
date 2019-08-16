@@ -1,0 +1,28 @@
+/* pages/personal.wxss */
+.personal{
+  width: 100%;
+}
+.personal-info{
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.personal-content{
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  left: 180rpx;
+  top: 130rpx;
+}
+.person-contact{
+  margin: -130rpx 30rpx 0;
+  height: 146rpx;
+  background-color: #fff;
+  padding: 0 50rpx;
+  border-radius: 15rpx;
+}
+.person-contact image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 15rpx;
+}

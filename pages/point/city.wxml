@@ -1,0 +1,15 @@
+<!--pages/point/city.wxml-->
+<view class="city-header" data-cityname="{{locText}}" bindtap="toPoint">
+  {{locText}} <image src="../../images/icon_loc.png"></image>
+  <text>当前所在城市</text>
+</view>
+<view class="city-list">
+  <view class="city-item" wx:for="{{cityList}}" wx:key="index">
+    <view class="city-item-province">{{item.name}}</view>
+    <view class="city-item-city" wx:for="{{item.list}}" wx:for-item="i" wx:key="index" data-cityname="{{i.name}}" bindtap="toPoint">{{i.name}}</view>
+    <!-- <view class="city-item-city">昌吉回族自治州</view>
+    <view class="city-item-city">巴音郭楞蒙古自治州</view>
+    <view class="city-item-city">阿克苏地区</view> -->
+  </view>
+</view>
+<toast id='toast'></toast>

@@ -1,0 +1,59 @@
+/* pages/service/pay.wxss */
+.pay-header{
+  height: 98rpx;
+  padding: 0 30rpx;
+  background-color: #fff;
+  margin-top: 2rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+.pay-info{
+  padding: 36rpx 30rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.pay-info-tit{
+  font-weight: bold;
+  margin-bottom: 15rpx;
+}
+.pay-info-price{
+  color: #FF4C4C;
+  font-size: 66rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.pay-info-price text{
+  font-size: 28rpx;
+}
+.pay-info-oldPrice{
+  text-align: center;
+  color: #999999;
+  text-decoration: line-through;
+}
+.pay-info-tip{
+  text-align: center;
+  font-size: 24rpx;
+  color: #FF6521;
+  margin-top: 25rpx;
+}
+.pay-style{
+  padding: 36rpx 30rpx 0;
+  background-color: #fff;
+  
+}
+.pay-style-item{
+  height: 100rpx;
+}
+.pay-style-item image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.pay-style-name{
+  margin-left: 15rpx;
+}
+.pay-tips{
+  margin-bottom: 156rpx;
+  font-size: 24rpx;
+  color: #FF6521;
+  padding: 30rpx 0 0 30rpx;
+}

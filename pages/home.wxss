@@ -1,0 +1,83 @@
+/* pages/home.wxss */
+page{
+  background-color: #EFEFF1;
+}
+.index-banner-info{
+  position: relative;
+}
+.index-banner{
+  width: 100%;
+  height: auto;
+}
+.index-personal{
+  position: absolute;
+  right: 0;
+  top: 50rpx;
+  width: 180rpx;
+  height: 53rpx;
+  z-index: 100;
+}
+.index-remain-num{
+  height: 108rpx;
+  line-height: 108rpx;
+  text-align: center;
+  
+}
+.index-remain-num text{
+  display: inline-block;
+  margin-right: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  color: #fff;
+  background-color: #FF853B;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 8rpx;
+}
+.index-info{
+  padding: 0 30rpx;
+}
+.index-tip-info{
+  background-color: #fff;
+  box-shadow:0px 10px 15px 0px rgba(0, 0, 0, 0.03);
+  border-radius:10rpx;
+  padding-left: 50rpx;
+}
+.index-tip-info image{
+  height: 160rpx;
+  width: 246rpx;
+}
+.index-tip-title{
+  color: #008CF4;
+  font-weight: bold;
+}
+.index-tip-tips{
+  background-color: #45B0FF;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  margin-top: 10rpx;
+}
+.index-btn-list{
+  margin-top: 26rpx;
+
+}
+.index-btn-item{
+  width: 49%;
+  box-shadow:0px 10px 15px 0px rgba(0, 0, 0, 0.03);
+  border-radius:10rpx;
+  background-color: #fff;
+  padding: 30rpx 0;
+  text-align: center;
+}
+.index-btn-item image{
+  width: 114rpx;
+  height: 120rpx;
+}
+.index-footer{
+  font-size: 20rpx;
+  color: #999;
+  text-align: center;
+  margin: 45rpx 0 30rpx;
+}
